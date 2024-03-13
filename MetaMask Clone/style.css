@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root{
+    --bg-color:#000212;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    background-color: var(--bg-color);
+    color: white;
+    font-family: "DM Sans", sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /* border-bottom: 1px solid silver; */
+    box-shadow:0px 0px 10px gray;
+    font-size: larger;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.main-div{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5%;
+}
+.main-div .left{
+    width: 50%;
+}
+.main-div .right{   
+    width: 50%;
+}
+.main-div .right h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.main-div .right p{
+    font-size: 20px;
+}
+
+.services{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.services .card{
+    width: 30%;
+    margin: 0px 5px;
+}
+.services .card img{
+    border-radius: 10px;
+}
+.services .card button{
+    padding: 15px;
+    background-color: #9a6be7;
+    color: white;
+    border-radius: 5px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.Testimonials{
+    margin-bottom: 30px;
+}
+.Testimonials ul{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.Testimonials ul li img{
+    height: 200px;
+    width: 200px;
+}
+
+.footer>div{
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+}
+.footer header{
+    color: #9a6be7;
+    font-size: x-large;
+}
+.footer ul{
+    list-style-type: none;
+    line-height: 30px;
+}
+.footer ul li{
+    font-weight: 200;
+}
+
+.copyright{
+    text-align: center;
+    font-weight: 200;
+}

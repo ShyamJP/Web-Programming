@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width:device-width,initial-scale:1.0">
+        <title>Gredient</title>
+        <style>
+            div{
+                height: 500px;
+                width: 500px;
+            }
+            .normal{
+                /* background: linear-gradient(#e66465, #9198e5); */
+                background: linear-gradient(0.80turn,#e66465, #9198e5);
+            }
+            .right{
+                background: linear-gradient(to right,#e66465, #9198e5);
+            }
+            .rotet{
+                background: linear-gradient(45deg,#e66465, #9198e5);
+            }
+            .interpolate{
+                background: linear-gradient(in oklab,#7de4cd,#e6bd64);
+            }
+            .turn{
+                background: linear-gradient(.25turn, rgba(0, 255, 255, 0.616), 30%, blue)
+            }
+            .persentage{
+                background: linear-gradient(red 0%, orange 25%, yellow 50%, green 75%, blue 100%);
+            }
+            .radial{
+                /* background-image: radial-gradient(rgba(255, 0, 0, 0), yellow, green); */
+                background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
+                /* background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black); */
+
+            }
+            .conic{
+                background-image: conic-gradient(red, yellow, green);
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="normal"></div>
+        <div class="right"></div>
+        <div class="rotet"></div>
+        <div class="interpolate"></div>
+        <div class="turn"></div>
+        <div class="persentage"></div>
+        <div class="radial"></div>
+        <div class="conic"></div>
+    </body>
+</html>

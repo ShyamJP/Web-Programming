@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width:device-width,initial-scale:1.0">
+        <title>Animation</title>
+        <style>
+            .container{
+                /* background-color: green; */
+                background-color: white;
+                width: 500px;
+                height: 500px;
+                animation: text;
+                animation-duration: 3s;
+                animation-delay: 3s;
+                animation-timing-function: ease-in-out;
+                animation-direction: alternate-reverse;  /*normal alternate-reverse reverse*/
+                animation-iteration-count: infinite;
+                /* animation-fill-mode: both; */
+            }
+            @keyframes text {
+                from{background-color: rgb(195, 0, 255);}
+                to{background-color: rgb(0, 140, 255);}
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <h1 class="greet">Hello Friends</h1> -->
+        <div class="container"></div>
+    </body>
+</html>
